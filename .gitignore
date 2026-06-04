@@ -1,0 +1,21 @@
+# Sensitive / machine-specific — never sync
+.credentials.json
+settings.local.json
+mcp-needs-auth-cache.json
+policy-limits.json
+.last-cleanup
+
+# Runtime data
+backups/
+file-history/
+ide/
+sessions/
+shell-snapshots/
+telemetry/
+
+# Transcripts
+projects/**/*.jsonl
+projects/**/todos/
+
+# Git
+*.lock

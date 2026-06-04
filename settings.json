@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell",
+      "Bash(where python *)",
+      "Bash(where python3 *)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/tools/**)",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(git add *)"
+    ]
+  }
+}
