@@ -8,7 +8,22 @@
       "Read(//c/tools/**)",
       "Skill(update-config)",
       "Skill(update-config:*)",
-      "Bash(git add *)"
+      "Bash(git *)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NonInteractive -File \"C:\\Users\\caleb\\.claude\\sync.ps1\"",
+            "shell": "powershell",
+            "async": true
+          }
+        ]
+      }
     ]
   }
 }
